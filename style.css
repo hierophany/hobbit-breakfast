@@ -1,0 +1,160 @@
+/* universal */
+
+* {
+    font-family: Optima, Arial, sans-serif;
+    text-align: center;
+}
+
+/* body */
+
+.image {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.body {
+    background-color: #edd6ba50;
+}
+
+.index-header {
+    font-size: 32x;
+    margin-bottom: 200px;
+    font-family: Didot, serif;
+}
+
+.recipe-header {
+    font-size: 32x;
+    font-family: Didot, serif;
+}
+
+.recipe-subheader {
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: Didot, serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 500px;
+    margin: 0 auto;
+}
+
+ol {
+    padding: 0;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.recipes-align-fontsize {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+ul div {
+    text-align: inherit;
+    font-size: inherit;
+    margin-bottom: inherit;
+}
+
+ol li {
+    text-align: inherit;
+    font-size: inherit;
+    margin-bottom: inherit;
+}
+
+/* .button applies to all buttons */
+
+.button {
+    display: inline-block;
+    border: 1px solid #0f3020;
+    border-radius: 4px;
+    padding: 10px 24px;
+    width: 450px;
+    /* The width must be decreased to account for the padding. 500px-48px-2px (24px of padding on both sides and 1px of border each side) */
+    margin-bottom: 10px;
+    background-color: #da9e41;
+    color: black;
+    font-family: Didot, serif;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* .expanding-button:focus and .expanded concern only the button handling the introduction reveal. 
+below, when .expanding-button is in focus and the element has the .expanded class, it becomes visible */
+
+.expanded {
+    display: none;
+    border: 1px solid #0f3020;
+    border-radius: 4px;
+    padding: 10px 24px;
+    width: 450px;
+    margin-bottom: 10px;
+    background-color: #0953383c;
+    color: black;
+    font-size: 18px;
+    text-align: left;
+}
+
+.expanding-button:focus+.expanded {
+    display: block;
+}
+
+.button:hover {
+    background-color: #0953382b;
+}
+
+.button:active {
+    transform: scale(1.01);
+}
+
+.button:visited {
+    color: black;
+}
+
+.description {
+    display: inline-block;
+    border: 1px solid #0f3020;
+    border-radius: 4px;
+    padding: 10px 24px;
+    width: 450px;
+    /* The width must be decreased to account for the padding. 500px-80px-2px (40px of padding on both sides and 1px of border each side) */
+    margin-bottom: 10px;
+    background-color: #0953383c;
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* alternative colors are below
+
+.body {
+    background-color: #fcfcd7;
+}
+
+.button {
+    border: 1px solid #3c6450;
+    background-color: #f5c595;
+    color: black;
+}
+
+.expanded {
+    border: 1px solid #3c6450;
+    background-color: #f0f0b4;
+    color: black;
+}
+
+.button:hover {
+    background-color: #bdcfaa;
+}
+
+.description {
+    border: 1px solid #3c6450;
+    background-color: #f0f0b4;
+    color: black;
+}
+
+*/
